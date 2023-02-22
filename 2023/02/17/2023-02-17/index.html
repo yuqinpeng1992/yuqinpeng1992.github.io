@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="gcc glibc libstdc++ g++之间的关系gcc gcc是编译器,源码中带有c标准库的实现glibc和c++标准库实现libstdc++gcc默认编译c代码,如果需要编译.cpp代码需要加上编译选项gcc -lstdc++  glibc 通常编译成动态库 libc.so.*实现了基础函数库：字符串库、日期时间、IO、并发支持、常见算法等C标准库是系统中的底层API,封装系统调用函数,">
+    <meta name="description" content="GNU与Linux 一个叫Richard Matthew Stallman的大胡子美国大叔对UNIX系统封闭源码很不满意，于1984年发起了GNU计划(GNU is Not Unix，首字母递归缩写)，计划开发一个完全兼容UNIX的自由软件系统，为此专门成立了自由软件基金会(Free Software Foundation，FSF)。FSF是打算自己开发一个开源的类UNIX系统,但是进度缓慢。 后">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Fri Feb 17 2023 00:00:00 GMT+0800 (中国标准时间)">
+<meta property="og:title" content="2023&#x2F;02&#x2F;17">
 <meta property="og:url" content="http://example.com/2023/02/17/2023-02-17/index.html">
 <meta property="og:site_name" content="Dream&#39;s Blog">
-<meta property="og:description" content="gcc glibc libstdc++ g++之间的关系gcc gcc是编译器,源码中带有c标准库的实现glibc和c++标准库实现libstdc++gcc默认编译c代码,如果需要编译.cpp代码需要加上编译选项gcc -lstdc++  glibc 通常编译成动态库 libc.so.*实现了基础函数库：字符串库、日期时间、IO、并发支持、常见算法等C标准库是系统中的底层API,封装系统调用函数,">
+<meta property="og:description" content="GNU与Linux 一个叫Richard Matthew Stallman的大胡子美国大叔对UNIX系统封闭源码很不满意，于1984年发起了GNU计划(GNU is Not Unix，首字母递归缩写)，计划开发一个完全兼容UNIX的自由软件系统，为此专门成立了自由软件基金会(Free Software Foundation，FSF)。FSF是打算自己开发一个开源的类UNIX系统,但是进度缓慢。 后">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-17T03:52:16.000Z">
-<meta property="article:modified_time" content="2023-02-17T04:29:27.509Z">
+<meta property="article:modified_time" content="2023-02-22T03:17:58.140Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="linux">
 <meta property="article:tag" content="gcc">
@@ -36,7 +36,7 @@
   
   
   
-  <title>Fri Feb 17 2023 00:00:00 GMT+0800 (中国标准时间) - Dream&#39;s Blog</title>
+  <title>2023/02/17 - Dream&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Fri Feb 17 2023 00:00:00 GMT+0800 (中国标准时间)"></span>
+            <span id="subtitle" data-typed-text="2023/02/17"></span>
           
         </div>
 
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          776 字
+          2.1k 字
         
       </span>
     
@@ -236,7 +236,7 @@
         
         
         
-          7 分钟
+          18 分钟
         
       </span>
     
@@ -274,21 +274,59 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Fri Feb 17 2023 00:00:00 GMT+0800 (中国标准时间)</h1>
+            <h1 style="display: none">2023/02/17</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="gcc-glibc-libstdc-g-之间的关系"><a href="#gcc-glibc-libstdc-g-之间的关系" class="headerlink" title="gcc glibc libstdc++ g++之间的关系"></a>gcc glibc libstdc++ g++之间的关系</h3><h4 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h4><blockquote>
-<p>gcc是编译器,源码中带有c标准库的实现glibc和c++标准库实现libstdc++<br>gcc默认编译c代码,如果需要编译.cpp代码需要加上编译选项<code>gcc -lstdc++</code></p>
+                <h3 id="GNU与Linux"><a href="#GNU与Linux" class="headerlink" title="GNU与Linux"></a>GNU与Linux</h3><blockquote>
+<p>一个叫Richard Matthew Stallman的大胡子美国大叔对UNIX系统封闭源码很不满意，于1984年发起了GNU计划(GNU is Not Unix，首字母递归缩写)，计划开发一个完全兼容UNIX的自由软件系统，为此专门成立了自由软件基金会(Free Software Foundation，FSF)。FSF是打算自己开发一个开源的类UNIX系统,但是进度缓慢。</p>
+<p>后面天才小子Linus Torvalds开发出了Linux,Linus觉得GNU开源精神不错,自己也不想折腾配套的应用软件(gcc、编辑器)等,双方就进行了整合组成了完整的操作系统发行版。FSF表示没什么意见，只是坚持要求全称应该叫“GNU&#x2F;Linux”，光叫Linux 就把GNU的成果完全忽略掉了。</p>
+<p>GNU&#x2F;Linux的诞生和发展，是一件足以影响计算机行业发展史的大事。不过好像大家都习惯简称Linux,RMS大叔至今谈到GNU没有开发出自己的操作系统就泪流满面。</p>
+</blockquote>
+<h3 id="linux-redhat-debian-centos-redhat是什么"><a href="#linux-redhat-debian-centos-redhat是什么" class="headerlink" title="linux redhat debian centos redhat是什么"></a>linux redhat debian centos redhat是什么</h3><h4 id="linux通常是指运行linux内核的操作系统"><a href="#linux通常是指运行linux内核的操作系统" class="headerlink" title="linux通常是指运行linux内核的操作系统"></a>linux通常是指运行linux内核的操作系统</h4><blockquote>
+<p>linux主要发行版分为两类，一类是由商业维护比如redhat,一类是由社区维护比如debian。<br>两个系列的操作系统主要区别于包管理命令(redhat系列使用yum,debian系列使用apt-get),其他命令因为都是linux内核则大同小异。</p>
+</blockquote>
+<h4 id="Debian系列"><a href="#Debian系列" class="headerlink" title="Debian系列"></a>Debian系列</h4><blockquote>
+<p>Debian是一个基于Linux内核为主的操作系统，Debian是社区类Linux发展的典范，是迄今为止最遵循GNU规范的Linux系统，该系列主要包含：debian和Ubuntu。<br>Debian最具特色的是apt-get&#x2F;dpkg包管理方式。<br>其实redhat的YUM也是在模仿debian的apt方式，但在二进制文件发行方式中，apt应该是最好的了。<br>Debian倾向于稳定，经过长时间验证的更新才会被应用于系统内，而Ubuntu倾向于把新东西整进来，所以在服务器方面，Debian是比Ubuntu更适合，也更轻（服务器不需要界面）。</p>
+</blockquote>
+<ul>
+<li>Ubuntu<blockquote>
+<p>Ubuntu拥有debian所有的优点，以及自己所加强的优点的近乎完美的Linux桌面系统。<br>Ubuntu也是Debian的衍生版本（友好的界面，简单的操作，可以帮助人们尽快熟悉Linux）。</p>
+</blockquote>
+</li>
+<li>Tails<blockquote>
+<p>Tails是Debian的衍生版本（Tails的目的就是为了帮助用户实现匿名上网，并最大限度保护个人隐私）。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="redhat系列"><a href="#redhat系列" class="headerlink" title="redhat系列"></a>redhat系列</h4><blockquote>
+<p>redhat系列大概有以下几个：RHEL(redhat enterprise linux)、Fedora core、centos。</p>
+</blockquote>
+<ul>
+<li>RHEL<blockquote>
+<p>redhat公司发行的收费版，非常稳定。</p>
+</blockquote>
+</li>
+<li>centos<blockquote>
+<p>redhat的社区版，功能和RHEL类似，但免费。</p>
+</blockquote>
+</li>
+<li>Fedora<blockquote>
+<p>redhat的桌面版本，界面优雅，功能和工具版本都非常靠前，但不是很稳定。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h3 id="gcc-glibc-libstdc-g-之间的关系"><a href="#gcc-glibc-libstdc-g-之间的关系" class="headerlink" title="gcc glibc libstdc++ g++之间的关系"></a>gcc glibc libstdc++ g++之间的关系</h3><h4 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h4><blockquote>
+<p>gcc是编译器,源码中带有c标准库的实现glibc和c++标准库实现libstdc++<br>gcc默认编译c代码,如果需要编译.cpp代码需要加上编译选项<code>gcc -lstdc++</code><br><a target="_blank" rel="noopener" href="https://ftp.gnu.org/gnu/gcc/">下载地址</a></p>
 </blockquote>
 <h4 id="glibc"><a href="#glibc" class="headerlink" title="glibc"></a>glibc</h4><blockquote>
-<p>通常编译成动态库 libc.so.*<br>实现了基础函数库：字符串库、日期时间、IO、并发支持、常见算法等<br>C标准库是系统中的底层API,封装系统调用函数,可以和操作系统、硬件交互<br><a target="_blank" rel="noopener" href="https://zh.cppreference.com/w/c">C标准库文档</a></p>
+<p>通常编译成动态库 libc.so.*<br>实现了基础函数库：字符串库、日期时间、IO、并发支持、常见算法等<br>C标准库是系统中的底层API,封装系统调用函数,可以和操作系统、硬件交互<br><a target="_blank" rel="noopener" href="https://zh.cppreference.com/w/c">C标准库文档</a><br>linux内核也是c写的,但是不依赖c标准库,内核实现的是系统级函数,所以glibc标准库会调用内核里的系统函数</p>
 </blockquote>
 <h4 id="libstdc"><a href="#libstdc" class="headerlink" title="libstdc++"></a>libstdc++</h4><blockquote>
 <p>它是gcc实现的c++标准库,对应clang编译器的c++标准库是libc++<br>通常编译成动态库 libstdc++.so.*.*.*<br>通常我们编译c++程序是动态链接,但有时候为了更好的让代码在不同的机器上运行，我们希望静态链接libstdc++.a,这样更方便移植。所以gcc编译时可以添加链接选项<code>gcc -static-libstdc++</code><br>查看可执行程序使用的是静态还是动态库,可以使用ldd命令查看程序依赖哪些动态库,如下: 程序a依赖libstdc++动态库</p>
 </blockquote>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs awk">[root@doc tmp]<span class="hljs-comment"># ldd a</span><br>	linux-vdso.so.<span class="hljs-number">1</span> =&gt;  (<span class="hljs-number">0</span>x00007ffee3d02000)<br>	libstdc++.so.<span class="hljs-number">6</span> =&gt; <span class="hljs-regexp">/lib64/</span>libstdc++.so.<span class="hljs-number">6</span> (<span class="hljs-number">0</span>x00007f0f381c1000)<br>	libc.so.<span class="hljs-number">6</span> =&gt; <span class="hljs-regexp">/lib64/</span>libc.so.<span class="hljs-number">6</span> (<span class="hljs-number">0</span>x00007f0f37df3000)<br>	libm.so.<span class="hljs-number">6</span> =&gt; <span class="hljs-regexp">/lib64/</span>libm.so.<span class="hljs-number">6</span> (<span class="hljs-number">0</span>x00007f0f37af1000)<br>	<span class="hljs-regexp">/lib64/</span>ld-linux-x86-<span class="hljs-number">64</span>.so.<span class="hljs-number">2</span> (<span class="hljs-number">0</span>x00007f0f384c9000)<br>	libgcc_s.so.<span class="hljs-number">1</span> =&gt; <span class="hljs-regexp">/lib64/</span>libgcc_s.so.<span class="hljs-number">1</span> (<span class="hljs-number">0</span>x00007f0f378db000)<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell">[root@doc tmp]# ldd a<br>	linux-vdso.so.1 =&gt;  (0x00007ffee3d02000)<br>	libstdc++.so.6 =&gt; /lib64/libstdc++.so.6 (0x00007f0f381c1000)<br>	libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f0f37df3000)<br>	libm.so.6 =&gt; /lib64/libm.so.6 (0x00007f0f37af1000)<br>	/lib64/ld-linux-x86-64.so.2 (0x00007f0f384c9000)<br>	libgcc_s.so.1 =&gt; /lib64/libgcc_s.so.1 (0x00007f0f378db000)<br></code></pre></td></tr></table></figure>
 
 
 
@@ -326,7 +364,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Fri Feb 17 2023 00:00:00 GMT+0800 (中国标准时间)</div>
+      <div>2023/02/17</div>
       <div>http://example.com/2023/02/17/2023-02-17/</div>
     </div>
     <div class="license-meta">
@@ -370,6 +408,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2023/02/17/%E7%8E%B0%E4%BB%A3%E5%A4%84%E7%90%86%E5%99%A8%E6%9E%B6%E6%9E%84/" title="现代处理器架构">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">现代处理器架构</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
