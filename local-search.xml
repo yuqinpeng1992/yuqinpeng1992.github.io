@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Fri Feb 17 2023 00:00:00 GMT+0800 (中国标准时间)</title>
+    <link href="/2023/02/17/2023-02-17/"/>
+    <url>/2023/02/17/2023-02-17/</url>
+    
+    <content type="html"><![CDATA[<h3 id="gcc-glibc-libstdc-g-之间的关系"><a href="#gcc-glibc-libstdc-g-之间的关系" class="headerlink" title="gcc glibc libstdc++ g++之间的关系"></a>gcc glibc libstdc++ g++之间的关系</h3><h4 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h4><blockquote><p>gcc是编译器,源码中带有c标准库的实现glibc和c++标准库实现libstdc++<br>gcc默认编译c代码,如果需要编译.cpp代码需要加上编译选项<code>gcc -lstdc++</code></p></blockquote><h4 id="glibc"><a href="#glibc" class="headerlink" title="glibc"></a>glibc</h4><blockquote><p>通常编译成动态库 libc.so.*<br>实现了基础函数库：字符串库、日期时间、IO、并发支持、常见算法等<br>C标准库是系统中的底层API,封装系统调用函数,可以和操作系统、硬件交互<br><a href="https://zh.cppreference.com/w/c">C标准库文档</a></p></blockquote><h4 id="libstdc"><a href="#libstdc" class="headerlink" title="libstdc++"></a>libstdc++</h4><blockquote><p>它是gcc实现的c++标准库,对应clang编译器的c++标准库是libc++<br>通常编译成动态库 libstdc++.so.*.*.*<br>通常我们编译c++程序是动态链接,但有时候为了更好的让代码在不同的机器上运行，我们希望静态链接libstdc++.a,这样更方便移植。所以gcc编译时可以添加链接选项<code>gcc -static-libstdc++</code><br>查看可执行程序使用的是静态还是动态库,可以使用ldd命令查看程序依赖哪些动态库,如下: 程序a依赖libstdc++动态库</p></blockquote><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs awk">[root@doc tmp]<span class="hljs-comment"># ldd a</span><br>linux-vdso.so.<span class="hljs-number">1</span> =&gt;  (<span class="hljs-number">0</span>x00007ffee3d02000)<br>libstdc++.so.<span class="hljs-number">6</span> =&gt; <span class="hljs-regexp">/lib64/</span>libstdc++.so.<span class="hljs-number">6</span> (<span class="hljs-number">0</span>x00007f0f381c1000)<br>libc.so.<span class="hljs-number">6</span> =&gt; <span class="hljs-regexp">/lib64/</span>libc.so.<span class="hljs-number">6</span> (<span class="hljs-number">0</span>x00007f0f37df3000)<br>libm.so.<span class="hljs-number">6</span> =&gt; <span class="hljs-regexp">/lib64/</span>libm.so.<span class="hljs-number">6</span> (<span class="hljs-number">0</span>x00007f0f37af1000)<br><span class="hljs-regexp">/lib64/</span>ld-linux-x86-<span class="hljs-number">64</span>.so.<span class="hljs-number">2</span> (<span class="hljs-number">0</span>x00007f0f384c9000)<br>libgcc_s.so.<span class="hljs-number">1</span> =&gt; <span class="hljs-regexp">/lib64/</span>libgcc_s.so.<span class="hljs-number">1</span> (<span class="hljs-number">0</span>x00007f0f378db000)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>gcc</tag>
+      
+      <tag>libstdc++</tag>
+      
+      <tag>glic</tag>
+      
+      <tag>编译</tag>
+      
+      <tag>链接</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2023/02/16/hello-world/"/>
     <url>/2023/02/16/hello-world/</url>
